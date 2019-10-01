@@ -18,7 +18,6 @@
 		// $stmt->bindParam(':lastname', $lastname);
 		
 		if($stmt->execute()){
-			$_SESSION['success'] = "Successfully created an account";
 			header('location: weatherapp.php');
         }
         else
